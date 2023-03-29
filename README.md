@@ -17,8 +17,6 @@
 - The `build.py` script can be used to build the project
 - The `cleanup.py` script is used to delete all `.class` files generated after compilation using `javac`
 
-<br>
-
 ## Dependencies
 This project is built and executed using **OpenJDK 16.0.2**
 ```bash
@@ -35,11 +33,9 @@ javac 16.0.2
 
 Also, **ANTLR version 4.11.1** was used.
 
-<br>
-
 ## Building and running ##
-    # NOTE
-    If you do not want to execute all these steps, there is a simple <code>build.py</code> script that automates everything.
+**NOTE:**
+*If you do not want to execute all these steps, there is a simple <code>build.py</code> script that automates everything.*
 
 1. It is first needed to generate the ANTLR base classes from the grammar file `SimpleGo.g4`
 
@@ -50,14 +46,10 @@ Also, **ANTLR version 4.11.1** was used.
 
     As a result, a `generated` directory should be created inside of the `src` directory, containing all required ANTLR API base classes.
 
-    <div class="box">
-    <p class="note">NOTE</p>
-
-    In case this command yields an error, make sure you have the ANTLR toolchain installed:
+    **NOTE:** In case this command yields an error, make sure you have the ANTLR toolchain installed:
     ```bash
     pip install antlr4-tools
     ```
-    </div>
 
 
 2. To build the actual project, execute the following commands:
@@ -91,8 +83,6 @@ Also, **ANTLR version 4.11.1** was used.
     ```bash
     java SimpleGoCompiler -compile ../tests/test_fibonacci.go
     ```
-
-<br>
 
 ## Command line options ##
 ```bash
