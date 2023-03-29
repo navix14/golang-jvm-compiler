@@ -1,26 +1,3 @@
-<style>
-    .box {
-        background-color: #283b31;
-        padding: 1em;
-        border-radius: 3px;
-        margin-bottom: 1em;
-    }
-
-    p.note {
-        font-weight: 500;
-    }
-
-    @media (prefers-color-scheme: light) {
-        .box {
-            background: #283b31;
-            color: white;
-        }
-        p.note {
-            color: white;
-        }
-    }
-</style>
-
 # Simple Go Compiler #
 
 ## Directory Structure ##
@@ -61,10 +38,8 @@ Also, **ANTLR version 4.11.1** was used.
 <br>
 
 ## Building and running ##
-<div class="box" style="margin: 1.5em 0;">
-    <p class="note">NOTE</p>
+    # NOTE
     If you do not want to execute all these steps, there is a simple <code>build.py</code> script that automates everything.
-</div>
 
 1. It is first needed to generate the ANTLR base classes from the grammar file `SimpleGo.g4`
 
