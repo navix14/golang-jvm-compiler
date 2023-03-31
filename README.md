@@ -93,9 +93,6 @@ Options:
   -liveness: Prints out the required number of registers to run program.
   -printast: Prints the AST. When given 'true', all node attributes are also printed.
 ```
-
-<br>
-
 ## Cleanup ##
 The included `cleanup.py` script can be used to quickly get rid of `.class` files and the generated ANTLR files:
 ```bash
